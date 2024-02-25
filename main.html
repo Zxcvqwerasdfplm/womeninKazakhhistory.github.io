@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>women in kz</title>
+    <link rel="icon" type="image/x-icon" href="rusikon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        .navbar-nav {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 30px; /* Добавление отступа между элементами навигации */
+        }
+        .navbar-nav .nav-item:hover {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при наведении */
+
+        }
+        .img{
+            position: relative;
+            overflow:hidden;
+            max-height: calc(100vh - 270px); /* Ограничение высоты изображения */
+        }
+        .img img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.5s ease;
+        }
+        @media screen and (max-width: 10px) {
+                .img img {
+                    transform: scale(0.5);
+                }
+        }
+        /*aboutus*/
+        .about-us {
+            width: 100%;
+            padding: 15px 0;
+            background: #F8F9FA;
+        }
+        .highlight {
+            color: black; /* Цвет выделенного слова */
+            /* Другие стили, если нужно */
+            font-weight: bold;
+        }
+        .pic {
+            height: auto;
+            max-width: 900px;
+            max-height: 170px;
+            border-radius: 7px;
+        }
+        .about {
+            max-width: 100%;
+            margin:auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .text {
+            width: 70%;
+        }
+        .text h2 {
+            font-size: 50px;
+            color:#D20062;
+            border-bottom: 1px solid #FFAFBD;
+            display: inline-block;
+        }
+        .text p {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            color:#D20062;
+        }
+            
+        @media screen and (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+                padding-left: 10px;
+            padding-right: 10px;
+            }
+            .pic {
+                display: none;
+            }
+            .text {
+                width: 100%;
+                text-align: center;
+            }
+            .text h2 {
+                font-size: 50px;
+            }
+            .text p {
+                font-size: 16px;
+            }
+        }
+
+
+        .womenh2 {
+            font-size: 30px;
+            color:#D20062;
+            display: flex;
+            padding-top: 20px;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при наведении */
+        }
+        .row-of-row {background-color: #FFEDF1;}
+        .row{
+            justify-content: center;
+            padding: 10px;
+            background-color: #FFEDF1;
+        }
+        .women {
+            display: flex;
+            align-items: start;
+            padding: 10px;  
+            margin: 20px 40px 20px 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при наведении */
+            border-radius: 10px;
+            background-color: #f2f2f2;
+        }
+        .content {
+            text-align: center;
+            width: 300px;
+            justify-content: center;
+        }
+
+        .content a h3{
+            color: #D20062;
+        }
+        .content a p{
+            color: #000000;
+        }
+        .content img {
+            width: 300px; /* Регулируйте размеры изображений по вашему усмотрению */
+            height: auto;
+            border-radius: 10px;
+        
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-wrap: wrap;
+            }
+            
+            .content {
+                width:45%; /* 3 сверху 2 внизу */
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .women .content {
+                display: flex;
+                align-items: center;
+                width: auto; /* Все в одной линии для маленьких экранов */
+                height: auto;
+                justify-content: center;
+            }
+        }
+        
+
+        /*useful*/
+        .useful{
+            padding: 20px;
+            background-color: #F8F9FA;
+        }
+        .useful h2{
+            font-size: 50px;
+            color:#D20062;
+            border-bottom: 1px solid #FFAFBD;
+            display: inline-block;
+        }
+        .useful .divp {
+            border-style: dotted;
+            border-width: 2px;
+            background-color:#FFEDF1;
+            padding: 20px;
+        }
+        /*footer*/
+        .footer {
+            background-color:#F8F9FA;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .social-icons {
+            margin-bottom: 20px;
+            
+        }
+        
+        .social-icons img {
+            margin: 0 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 12px;
+        }
+        .social-icons img:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* тень при наведении */
+
+        }
+        .copyright {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us" style="color: #000000;" >О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project" style="color: #000000;" >Проект</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#women" style="color: #D20062;;">Великие Женщины в истории Казахстана</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#useful" style="color: #000000;">Полезно</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts" style="color: #000000;">Контакты</a> 
+                    </li>   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="img">
+        <img src="ты история слоган.png" class="img-fluid" alt="garden img">
+    </div>
+    <main>
+        <section class="about-us" id="about-us">
+            <div class="about">
+                <img src="groupaboutus.png"  alt="logo" class="pic">
+                <div class="text">
+                <h2 >О нас </h2>
+                <p>Нами выбрана тема <span class="highlight">«Выдающиеся женщины в Казахской истории»</span>, поскольку долгое время исторические рассказы ориентировались на мужскую перспективу, что привело к упущению важных вкладов и достижений женщин. Исследование выдающихся женщин в Казахстане способствует коррекции этого дисбаланса и созданию более полного и объективного исторического нарратива.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about-us" id="project">
+            <div class="about">
+                <div class="text">
+                <h2>Проект </h2>
+                <p>Цель нашей работы создание информативного и интерактивного веб-сайта, посвященного женщинам, чей вклад оказал заметное влияние на развитие культуры и общества Казахстана.</p>
+                </div>
+                <img src="проектиконка.png"  alt="logo" class="pic">
+            </div>
+        </section>
+
+        <div class="row-of-row"><h2 class="womenh2">Великие Женщины в истории Казахстана</h2>
+            <div class="row" id="women">
+                <section class="women">
+                    <div class="content">
+                        <a href="soldiers.html"> <!-- Ссылка на другую страницу -->
+                            <img src="хиуаз_доспанова.jpeg" alt="Военные">
+                            <h3>Военные</h3>
+                        </a>
+                        <p> Военные защищали нашу страну и обеспечивали мир и стабильность. Их отвага и самоотверженность позволяли нам жить в безопасности и свободе.Такие как Хиуаз Доспанова , Алия Молдагулова...</p>
+                        <a href="soldiers.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="women">
+                    <div class="content">
+                        <a href="scientists.html"> <!-- Ссылка на другую страницу -->
+                            <img src="патшайым_тажибаева.jpeg" alt="ученые">
+                            <h3>Ученые</h3>
+                        </a>
+                        <p>Ученые играли ключевую роль в развитии общества, их открытия и исследования направляли нас в будущее, открывая новые горизонты знаний и возможностей.Такие как Патшайым Тажибаева,Нагима Айтхожина...</p>
+                        <a href="scientist.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="women">
+                    <div class="content">
+                        <a href="politics.html"> <!-- Ссылка на другую страницу -->
+                            <img src="томирис.jpeg" alt="Политики">
+                            <h3>Политики</h3>
+                        </a>
+                        <p>Политики определяли курс нашего общества и принимали решения, которые влияли на жизнь миллионов людей. Их лидерство и управленческие навыки могли сделать мир лучше или хуже.Такие как Акмарал Арыстанбекова , Бопай ханым...</p>
+                        <a href="politics.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="women">
+                    <div class="content">
+                        <a href="sportswomen.html"> <!-- Ссылка на другую страницу -->
+                            <img src="жансая_абдумалик.jpeg" alt="Спортсменки">
+                            <h3>Спортсменки</h3>
+                        </a>
+                        <p>Спортсменки становились символами силы и преданности своему делу. Их достижения вдохновляли миллионы людей заниматься спортом и преодолевать собственные пределы.Такие как Жансая Абдумалик , Зульфия Габидуллина...</p>
+                        <a href="sportswomen.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="women">
+                    <div class="content">
+                        <a href="musicians.html"> <!-- Ссылка на другую страницу -->
+                            <img src="бибигуль_тулегенова.jpeg" alt="Музыканты">
+                            <h3>Музыканты</h3>
+                        </a>
+                        <p> Музыканты не только развлекали нас своим творчеством, но и вдохновляли, поднимая настроение и передавая эмоции через свою музыку.Такие как Бибигуль Тулегенова , Айман Мусоходжаева...</p>
+                        <a href="musicians.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="women">
+                    <div class="content">
+                        <a href="artists.html"> <!-- Ссылка на другую страницу -->
+                            <img src="алла_ильчун.jpeg" alt="артисты ">
+                            <h3>Артисты</h3>
+                        </a>
+                        <p>Артисты приносили красоту и вдохновение в нашу жизнь через искусство. Их выразительность и творческий подход делали мир ярче и насыщенне.Такие как Алла Ильчун ,Алтынай Асылмуратова...  </p>
+                        <a href="artists.html"> <!-- Ссылка на другую страницу -->
+                            <p>узнать больше...</p>
+                        </a>
+                    </div>
+                </section>
+            </div></div>
+        
+        <section class="useful" id="useful">
+            <h2>Полезные материалы</h2>
+            <div class="divp">
+                <p>Cайт "Harper’s BAZAAR KazakhstanСтатья" статья озаглавленная "Великие женщины Казахстана", отмечает важный вклад женщин в различные сферы жизни страны, включая искусство, спорт, исторические события и другие области. </p>
+            <p>"Super Қыз: вдохновляющие истории для девочек и не только" - это книга, написанная Дианой Шәйжүнісовой и выпущенная в 2020 году. Она представляет собой сборник вдохновляющих историй о женщинах с разными профессиями и достижениями.  </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="social-icons">
+            <a href="https://t.me/yourtelegram" target="_blank">
+                <img src="telegramicon.png" alt="Telegram" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/yourinstagram" target="_blank">
+                <img src="instagramicon.jpg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/yourtwitter" target="_blank">
+                <img src="twittericon.jpg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/yourfacebook" target="_blank">
+                <img src="facebookicon.jpg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/yourfacebook" target="_blank">
+                <img src="whatsupicon.jpg" alt="Whatsup" width="30" height="30">
+            </a>
+        </div>
+        <div><p class="copyright">©2024 Astana IT university: cs-2205</p></div>
+    </footer>
+</body>
+</html>
