@@ -102,71 +102,67 @@
             }
         }
 
-
-        .womenh2 {
-            font-size: 30px;
+        .divwomen {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background-color: #FFEDF1;
+            padding-top: 20px ;
+            color: #D20062;
+            font-size: 50px;
             color:#D20062;
-            display: flex;
-            padding-top: 20px;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при наведении */
+            border-bottom: 1px solid #FFAFBD;
+            
         }
-        .row-of-row {background-color: #FFEDF1;}
-        .row{
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            padding: 10px;
             background-color: #FFEDF1;
         }
+
         .women {
             display: flex;
-            align-items: start;
-            padding: 10px;  
-            margin: 20px 40px 20px 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при наведении */
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 40px 40px 20px 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень при наведении */
             border-radius: 10px;
             background-color: #f2f2f2;
-        }
-        .content {
-            text-align: center;
-            width: 300px;
-            justify-content: center;
+            max-width: 300px; /* Максимальная ширина карточки */
         }
 
-        .content a h3{
+        .content {
+            text-align: center;
+        }
+
+        .content a h3 {
             color: #D20062;
         }
-        .content a p{
+
+        .content a p {
             color: #000000;
         }
+
         .content img {
-            width: 300px; /* Регулируйте размеры изображений по вашему усмотрению */
+            width: 100%; /* 100% ширина изображения внутри карточки */
             height: auto;
             border-radius: 10px;
-        
         }
 
         @media (max-width: 768px) {
-            .section {
-                flex-wrap: wrap;
-            }
-            
-            .content {
-                width:45%; /* 3 сверху 2 внизу */
-                height: auto;
+            .women {
+                margin-bottom: 20px; /* Уменьшаем отступ снизу для более плотного расположения карточек */
             }
         }
 
         @media (max-width: 480px) {
-            .women .content {
-                display: flex;
-                align-items: center;
-                width: auto; /* Все в одной линии для маленьких экранов */
-                height: auto;
-                justify-content: center;
+            .women {
+                max-width: 100%; /* Полная ширина на маленьких экранах */
             }
         }
-        
 
         /*useful*/
         .useful{
@@ -210,6 +206,7 @@
         .copyright {
             color: #333;
         }
+
     </style>
 </head>
 <body>
@@ -263,7 +260,7 @@
             </div>
         </section>
 
-        <div class="row-of-row"><h2 class="womenh2">Великие Женщины в истории Казахстана</h2>
+        <div class="divwomen"><h2>Выдающиеся женщины в истории Казахстана</h2></div>
             <div class="row" id="women">
                 <section class="women">
                     <div class="content">
@@ -280,7 +277,7 @@
                 <section class="women">
                     <div class="content">
                         <a href="scientists.html"> <!-- Ссылка на другую страницу -->
-                            <img src="патшайым_тажибаева.jpeg" alt="ученые">
+                            <img src="патшайым_тажибаева.png" alt="ученые">
                             <h3>Ученые</h3>
                         </a>
                         <p>Ученые играли ключевую роль в развитии общества, их открытия и исследования направляли нас в будущее, открывая новые горизонты знаний и возможностей.Такие как Патшайым Тажибаева,Нагима Айтхожина...</p>
@@ -337,7 +334,7 @@
                         </a>
                     </div>
                 </section>
-            </div></div>
+            </div>
         
         <section class="useful" id="useful">
             <h2>Полезные материалы</h2>
